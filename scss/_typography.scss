@@ -1,0 +1,92 @@
+@use 'helpers' as *;
+
+.heading--h1 {
+  @include font-style(80, 97.52, #ffff, 700);
+  letter-spacing: 10%;
+  margin: 223px 0 20px 0;
+}
+
+.subtitle {
+  @include font-style();
+  letter-spacing: 0.3em;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading--h2 {
+  @include font-style(44, 53.64, #2C4058, 700);
+  position: relative;
+}
+
+.heading--h2-line::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: #2C4058;
+  top: -30px;
+  left: 46.5%;
+  position: absolute;
+}
+
+.heading--h2-line-white::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: #fff;
+  top: -30px;
+  left: 46.5%;
+  position: absolute;
+}
+
+.heading--h2-line-form::before {
+  content: '';
+  left: 43%
+}
+
+.superscript {
+  @include font-style(22, 26.82, #2C4058);
+  margin: 0;
+}
+
+.description {
+  @include font-style(18, 30, #2C4058, 400, $secondary-font);
+  margin: 0 0 40px 0;
+}
+
+.caption {
+  @include font-style(15, 20.43, #000, 400, $secondary-font);
+  font-style: $secondary-font-italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.white {
+  color: #fff;
+}
+
+.heading--h3 {
+  @include font-style(22, 26.82, #2C4058, 700);
+  margin: 0 0 15px;
+}
+
+.author-name {
+  @include font-style(18, 21.94, #2C4058);
+}
+
+.date {
+  @include font-style(14, 17.07, #55B7FF);
+}
+
+.footer-text {
+  @include font-style(14, 17.07);
+}
+
+.contact {
+  @include font-style(14, 17.07, #000);
+  margin: 20px 0 20px 0;
+}

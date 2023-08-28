@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+input {
+  background: transparent;
+  border: none;
+}
+
+
